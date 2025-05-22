@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regra de 3</title>
+    <style>
+        h1, pre{
+          font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sua regra de 3 aí</h1>
+    <pre id="regra"><h2>
+    a ----- b
+    c ----- x
+    </h2>
+    </pre>
+    <script>
+        let a = Number(prompt("Digita pra mim o valor de A"));
+        let b = Number(prompt("Agora o valor de B"));
+        let c = Number(prompt("Por último, o de C"));
+
+        let x = (a === 0) ? "Não dá pra dividir por zero." : (b * c) / a;
+
+        document.getElementById("regra").innerText = `
+        ${a} ----- ${b}
+        ${c} ----- ${x}
+
+        `;
+
+    </script>
+</body>
+</html>
